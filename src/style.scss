@@ -1,12 +1,217 @@
+$background:#f5f1e7;;
+
 .app{
     .container{
+        // width: 1024px;
+
+        .link {
+        text-decoration: none;
+        color: inherit;
+        }
 
         //login
         .auth{
             display:flex;
+            flex-direction: column;
+            justify-content : center;
+            align-items: center;
+            height: 100vh;
+            background-color: $background;
+        }
+
+        h1{
+            font-size: 20px;
+            color:black;
+            margin-bottom: 20px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            // width: 50vh;
+            // height: 30vh;
+            padding: 5%;
+            gap:20px;
+        }
+
+        input{
+            padding: 10px;
+            border:none;
+            border-bottom:1px solid gray;
+        }
+
+        button{
+            background-color: black;
+            color:white;
+            padding: 1vh;
+            cursor: pointer;
+        }
+
+        span{
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reg{
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: red;
+            background-color: $background;
+            height: 100vh;
+        }
+
+        //navbar
+        .navbar{
+            .container{
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+
+                .links{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap:10px;  
+                    padding-right: 10%;
+                }
+    
+                .logo{
+                    width:20%;
+                    padding-top: 1%;
+                    padding-left: 10%;
+                    padding-bottom: 0.65%;
+                }
+    
+                .link{
+                    display: flex;
+                    
+                      
+                }
+
+                h6{
+                    font-size:16px;
+                    font-weight:300;
+                }
+            }            
+
+        }
+        //
+        .home{
+            // background-color: $background;
+
+            .posts{
+                margin-top: 10px;
+                // background-color:$background;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                // gap:150px;
+                // height: 50rem;
+            }
+
+            .post{
+                margin: 140px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                gap:50px;
+                display: flex;
+                border-bottom: 1px solid rgb(155, 155, 158);
+                justify-content: center;
+
+            }
+
+            .link{
+                text-decoration: none;
+            }
+
+            .img{
+                
+                .img{
+                    width: 100%;
+                    max-width: 400px;
+                    object-fit: cover;                    
+                }
+
+            }
+            
+            .content{
+                flex:2;
+                justify-content: center;
+            }
+
+            button{
+                margin-top: 20px;
+            }
+        }
+
+        //footer
+        .footer{
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            height: 1;
+
+            .logo{
+                width:28%;
+                padding-top: 1%;
+                padding-left: 10%;
+                padding-bottom: 0.65%;
+            }
+
+            .img{
+                width:10%;
+            }
+
+            span{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-left:20%;
+                width:100%;
+            }
+
+            .react-logo{
+                width: 3%;
+                padding-left: 5px;
+            }
+        }
+
+        //single
+        .single{
+            display: flex;
+            flex-direction: column;
+
+            .container{
+                justify-content: center;
+            }
+
+            .image-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            img{
+                width:80%;                
+            }
+
+            // content{
+            //     display: flex;
+            //     padding: 1000px;
+            //     border: 1px solid black;
+            // }
+        }
+
+        //write
+        .add{
+            
         }
     }
 }
