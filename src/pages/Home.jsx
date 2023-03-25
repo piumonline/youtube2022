@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './home.scss';
 
 const Home = () => {
 
@@ -40,7 +41,7 @@ const Home = () => {
                   <h1>{post.title}</h1>
                 </Link>
                   <p>{post.desc}</p>
-                  <button>Read more</button>
+                  <button><Link to={`/post/${post.id}`} style={{ color: "inherit", textDecoration: "none" }}>Read more...</Link></button>
             </div>
           </div>
         ))}
